@@ -84,7 +84,7 @@ public class Assignment1 {
 
 
         /*
-            findAll Test
+            findById Test
          */
 
         Optional<Article> test1 = articleRepository.findById(5L);
