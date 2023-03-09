@@ -1,0 +1,10 @@
+#articles {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.article {
+    width:100px;
+    height:100px;
+}

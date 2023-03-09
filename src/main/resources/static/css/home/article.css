@@ -1,0 +1,56 @@
+.article {
+    padding-bottom: 10px;
+}
+
+.article-topper {
+    display:flex;
+    flex-direction: row;
+    height:40px;
+    line-height: 20px;
+    box-sizing: border-box;
+    padding:10px;
+
+}
+
+.article-topper-img {
+    width:20px;
+    height:20px;
+    border-radius:15px;
+}
+
+.article-topper-name {
+    font-size:13px;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+.article-img {
+    width:300px;
+    height:300px;
+}
+
+.article-nav-item {
+    padding: 10px 5px 5px 8px;
+    width:20px;
+    height:20px;
+}
+
+.article-content {
+    padding-left:8px;
+}
+.article-content-nickname {
+    font-size:13px;
+    font-weight: bold;
+}
+
+.article-content-content {
+    font-size:13px;
+}
+
+.article-timestamp {
+    padding-top:5px;
+    padding-left:8px;
+    color:gray;
+    font-size:11px;
+}
+

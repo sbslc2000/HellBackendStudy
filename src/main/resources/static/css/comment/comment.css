@@ -1,0 +1,84 @@
+
+
+#header {
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height:40px;
+    width:300px;
+    font-size:20px;
+    line-height:40px;
+    position:fixed;
+    background-color:white;
+    top:0;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+#header-title {
+    width:300px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+#header-setting {
+    position:absolute;
+    top:10px;
+    left:5px;
+    width:18px;
+
+    font-size:14px;
+    font-weight:bold;
+}
+
+hr {
+    margin:0;
+}
+
+
+
+#header-padding {
+    margin-top:0;
+    height:30px;
+}
+
+.profile-img {
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    border: 1px solid #dbdbdb;
+}
+
+#article {
+    padding:8px;
+    display:flex;
+    flex-direction: row;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+#article-content {
+    padding: 0px 8px;
+    font-size:13px;
+}
+
+#comments {
+    padding-top:5px;
+}
+
+.comment {
+    display:flex;
+    flex-direction: row;
+    padding: 8px 8px 14px;
+}
+
+.comment-content {
+    width:220px;
+    padding-left:8px;
+    font-size:13px;
+}
+
+.comment-like {
+    margin-top:10px;
+    width:12px;
+    height:12px;
+}

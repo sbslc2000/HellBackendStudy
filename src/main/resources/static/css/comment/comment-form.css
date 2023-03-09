@@ -1,0 +1,15 @@
+#comment-form {
+    background-color:#fafafa;
+    display:flex;
+    padding:8px;
+    flex-direction: row;
+    border-bottom:1px solid lightgray;
+}
+
+#comment-input {
+    margin-left: 10px;
+    width:250px;
+    border: 1px solid lightgray;
+    border-radius:10px;
+}
+

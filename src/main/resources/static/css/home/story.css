@@ -1,0 +1,31 @@
+.story-section{
+    height:60px;
+    background-color:#fafafa;
+    box-sizing: border-box;
+    border-bottom : 1px solid #dbdbdb;
+    display:flex;
+    flex-direction: row;
+    padding-left:10px;
+}
+
+.story-item {
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    display:flex;
+    flex-direction: column;
+}
+
+.story-img {
+    width:40px;
+    height:40px;
+    border-radius:20px;
+    box-sizing: border-box;
+    border: 2px solid deeppink;
+}
+
+.story-name {
+    //text-align:center;
+    font-size:8px;
+}

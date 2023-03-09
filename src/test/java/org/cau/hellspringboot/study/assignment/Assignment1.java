@@ -15,13 +15,39 @@ import static org.assertj.core.api.Assertions.*;
 
 public class Assignment1 {
 
-    @ToString
-    @Getter
     static class Article {
         Long id;
         String title;
         String content;
         LocalDateTime createdAt;
+
+        @Override
+        public String toString() {
+            return "Article{" +
+                    "id=" + id +
+                    ", title='" + title + '\'' +
+                    ", content='" + content + '\'' +
+                    ", createdAt=" + createdAt +
+                    '}';
+        }
+
+        public Long getId() {
+            return id;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public String getContent() {
+            return content;
+        }
+
+        public LocalDateTime getCreatedAt() {
+            return createdAt;
+        }
+
+
 
         public Article(Long id, String title, String content, LocalDateTime createdAt) {
             this.id = id;
@@ -49,63 +75,51 @@ public class Assignment1 {
 
         public Optional<Article> findById(Long id) {
             //implement here
-
-            return Optional.ofNullable(repository.get(id));
+            return null;
         }
 
         public List<Article> findAll() {
             //implement here
-
-            List<Article> list = repository.values()
-                    .stream()
-                    .collect(Collectors.toList());
-            return list;
+            //DO NOT USE FOR STATEMENT
+            return null;
         }
 
         public List<Article> findWhereTitleEndWithOrderByContentDesc(String suffix) {
             //implement here
-
-            List<Article> collect = repository.values()
-                    .stream()
-                    .filter(a -> a.title.endsWith(suffix))
-                    .sorted(Comparator.comparing(Article::getContent)
-                            .reversed())
-                    .collect(Collectors.toList());
-
-            return collect;
+            //DO NOT USE FOR STATEMENT
+            return null;
         }
     }
 
     @Test
     void assignment1() {
-
-
         ArticleRepository articleRepository = new ArticleRepository();
 
 
         /*
             findById Test
          */
-
         Optional<Article> test1 = articleRepository.findById(5L);
         Optional<Article> test2 = articleRepository.findById(10L);
 
         assertThat(test1.get().id).isEqualTo(5L);
-        assertThatThrownBy(() -> {
-            test2.get();
-        }).isInstanceOf(NoSuchElementException.class);
+        assertThatThrownBy(() -> {test2.get();}).isInstanceOf(NoSuchElementException.class);
 
+        /*
+            findAll Test
+         */
+        List<Article> test3 = articleRepository.findAll();
 
+        assertThat(test3.size()).isEqualTo(9);
+        articleRepository.repository.values().stream().forEach(assertThat(test3)::contains);
 
         /*
             findWhereTitleEndWithOrderByContentDesc test
          */
+        List<Article> test4 = articleRepository.findWhereTitleEndWithOrderByContentDesc("글입니다.");
 
-        List<Article> test3 = articleRepository.findWhereTitleEndWithOrderByContentDesc("글입니다.");
-
-        assertThat(test3.size()).isEqualTo(6);
-        assertThat(test3.get(0).id).isEqualTo(6);
-        assertThat(test3.get(5).id).isEqualTo(9);
-
+        assertThat(test4.size()).isEqualTo(6);
+        assertThat(test4.get(0).id).isEqualTo(6);
+        assertThat(test4.get(5).id).isEqualTo(9);
     }
 }

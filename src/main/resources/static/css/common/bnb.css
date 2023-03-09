@@ -1,0 +1,29 @@
+#footer {
+    border-top: 1px solid #dbdbdb;
+    position:fixed;
+    height:40px;
+    width:300px;
+    color: #8a8c8f;
+    background-color:white;
+    bottom:0;
+    margin-bottom:0;
+}
+
+#bnb-item-list {
+    margin:0 20px;
+    width:260px;
+    display:flex;
+    flex-direction: row;
+}
+
+.bnb-item {
+    width:52px;
+}
+
+.bnb-item > img  {
+    padding: 8px;
+    width: 20px;
+}
+
+.bnb-item-profile {
+}

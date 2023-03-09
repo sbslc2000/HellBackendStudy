@@ -1,0 +1,25 @@
+
+
+#header {
+    padding-left:10px;
+    box-sizing: border-box;
+    height:40px;
+    width:300px;
+    font-size:20px;
+    line-height:50px;
+    position:fixed;
+    background-color:white;
+    top:0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+hr {
+    margin:0;
+}
+
+
+
+#header-padding {
+    margin-top:0;
+    height:30px;
+}
