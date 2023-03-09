@@ -1,10 +1,10 @@
-#articles {
+#article-table {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.article {
+.article-table-item {
     width:100px;
     height:100px;
 }

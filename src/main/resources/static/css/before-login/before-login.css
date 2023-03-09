@@ -1,0 +1,23 @@
+#before-login-wrapper {
+    padding-top:100px;
+    text-align: center;
+}
+
+#before-login-get-app-btn {
+    margin-top:20px;
+    background-color:#0195f7;
+    border:0;
+    border-radius:5px;
+    color:white;
+    height:30px;
+    width:250px;
+}
+
+#before-login-login-signup {
+    margin-top:15px;
+    font-size:10px;
+}
+
+#before-login-login-signup > a {
+    color : #0195f7;
+}

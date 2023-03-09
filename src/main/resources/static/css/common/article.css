@@ -38,13 +38,42 @@
 .article-content {
     padding-left:8px;
 }
+
+.article-content-like {
+    height:12px;
+    font-size:12px;
+    margin-bottom:6px;
+    margin-left:2px;
+    line-height:12px;
+}
+
+.article-content-like-profile {
+    width:12px;
+    height:12px;
+    border-radius:6px;
+}
 .article-content-nickname {
+
     font-size:13px;
     font-weight: bold;
 }
 
 .article-content-content {
     font-size:13px;
+}
+
+.article-comments {
+    margin-top:4px;
+}
+
+.article-comments-view {
+    color: grey;
+    font-size:11px;
+}
+
+.article-comments-comment {
+    margin: 2px 0;
+    font-size: 11px;
 }
 
 .article-timestamp {
