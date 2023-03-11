@@ -18,6 +18,13 @@
     border: 1px solid lightgray;
 }
 
+.edit-profile-notes {
+    display:block;
+    color:gray;
+    margin:10px 0px;
+    font-size:10px;
+}
+
 #bio {
     height: 44px !important;
 }
